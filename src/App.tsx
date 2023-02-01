@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import './PhotoViewer/PhotoViewer.css'
 import { PhotoViewer } from './PhotoViewer/PhotoViewer';
+import { photoSelection } from './PhotoSelector/PhotoSelector';
 
 
 function App() {
@@ -10,7 +11,14 @@ function App() {
       <div>
           <h1>React Photo Viewer</h1>
           <PhotoViewer url={"https://picsum.photos/id/600/1600/900.jpg"}/> 
+
+          <h1> Select Image </h1>
+         {photoSelection.map((url)=>{
+          return   <img src={url} /> 
+         })}
+
       </div>
+
   );
 }
 
