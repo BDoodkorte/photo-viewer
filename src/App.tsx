@@ -13,10 +13,11 @@ function App() {
           <PhotoViewer url={"https://picsum.photos/id/600/1600/900.jpg"}/> 
 
           <h1> Select Image </h1>
+          <div>
          {photoSelection.map((url)=>{
           return   <img src={url} /> 
          })}
-
+        </div>
       </div>
 
   );
