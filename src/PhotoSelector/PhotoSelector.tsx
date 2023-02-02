@@ -15,9 +15,18 @@ function PhotoSelector() {
 		}
 	}
 
-	return urls;
+	return urls ;
 }
 
 export const photoSelection = PhotoSelector();
 
+export function DisplayImageList(props : {mainImage : string, setMainImage : React.Dispatch <React.SetStateAction<string>>}){
 
+        return <div className="photogrid">
+		{photoSelection.map((url) => {
+          return <img onClick={() => {
+            props.setMainImage(url)
+          }}
+            className={url === props.mainImage ? "border" : "thumbnails"} src={url} />
+        })}
+		</div>}

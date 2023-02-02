@@ -4,6 +4,7 @@ import './App.css'
 import './PhotoViewer/PhotoViewer.css'
 import { PhotoViewer } from './PhotoViewer/PhotoViewer';
 import { photoSelection } from './PhotoSelector/PhotoSelector';
+import { DisplayImageList } from './PhotoSelector/PhotoSelector';
 
 
 function App() {
@@ -19,14 +20,7 @@ function App() {
       </div>
 
       <h1> Select Image </h1>
-      <div className='photogrid'>
-        {photoSelection.map((url) => {
-          return <img onClick={() => {
-            setMainImage(url)
-          }}
-            className={url === mainImage ? "border" : "thumbnails"} src={url} />
-        })}
-      </div>
+        <DisplayImageList setMainImage={setMainImage} mainImage={mainImage}/>
     </div>
 
   );
