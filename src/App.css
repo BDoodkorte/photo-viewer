@@ -4,18 +4,42 @@
   padding: 2rem;
   text-align: center;
 }
+*{
+  box-sizing: border-box;
+}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.card {
+  padding: 2em;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.read-the-docs {
+  color: #888;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.photogrid {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5%;
+  row-gap: 7px;
 }
+
+.thumbnails {
+  width: 24.625%;
+}
+
+.border{
+  border: solid 4px rgb(255, 196, 0);
+  width: 24.625%;
+}
+
+.mainpiccontainer {
+  max-width: 1280px;
+
+}
+
+
+/* 
+
 
 @keyframes logo-spin {
   from {
@@ -31,12 +55,14 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
-.card {
-  padding: 2em;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
 }
-
-.read-the-docs {
-  color: #888;
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
-
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */

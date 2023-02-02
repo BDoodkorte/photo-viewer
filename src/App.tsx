@@ -7,15 +7,23 @@ import { photoSelection } from './PhotoSelector/PhotoSelector';
 
 
 function App() {
+  const [mainImage, setMainImage] = useState("https://picsum.photos/id/600/1600/900.jpg");
+
+
+
   return (
       <div>
           <h1>React Photo Viewer</h1>
-          <PhotoViewer url={"https://picsum.photos/id/600/1600/900.jpg"}/> 
+          <div className='mainpiccontainer'>         
+            <PhotoViewer url={mainImage}/> 
+          </div>
 
           <h1> Select Image </h1>
-          <div>
+          <div className='photogrid'>  
          {photoSelection.map((url)=>{
-          return   <img src={url} /> 
+          return   <img onClick={() => {setMainImage(url) 
+          }} 
+          className={url===mainImage? "border" :"thumbnails"  } src={url} /> 
          })}
         </div>
       </div>
