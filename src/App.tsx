@@ -8,7 +8,7 @@ import { DisplayImageList } from './PhotoSelector/PhotoSelector';
 
 
 function App() {
-  const [mainImage, setMainImage] = useState("https://picsum.photos/1600/900");
+  const [mainImage, setMainImage] = useState("https://picsum.photos/id/600/1600/900");
 
 
 

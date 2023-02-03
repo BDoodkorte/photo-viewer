@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Component Should match snapshot with url prop 1`] = `
+<div
+  className="photo"
+>
+  <img
+    alt="main_pic"
+    className="main_pic"
+    src="https://picsum.photos/id/600/1600/900"
+  />
+</div>
+`;

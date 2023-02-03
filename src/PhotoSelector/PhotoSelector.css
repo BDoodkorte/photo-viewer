@@ -1,4 +1,4 @@
-/* @media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1300px) {
 
     .photogrid {
         display: inline-flex;
@@ -55,4 +55,4 @@
       border: solid 4px rgb(255, 196, 0);
       width: 49%;
     }
-  } */
+  }

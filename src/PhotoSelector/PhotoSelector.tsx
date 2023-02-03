@@ -27,6 +27,6 @@ export function DisplayImageList(props : {mainImage : string, setMainImage : Rea
           return <img onClick={() => {
             props.setMainImage(url)
           }}
-            className={url === props.mainImage ? "border" : "thumbnails"} src={url} />
+            className={url === props.mainImage ? "border" : "thumbnails"} src={url} alt={url}/>
         })}
 		</div>}

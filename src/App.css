@@ -1,3 +1,5 @@
+@import "./PhotoSelector/PhotoSelector.css";
+
 #root {
   margin: 0 auto;
   padding: 2rem;
@@ -17,17 +19,7 @@
 }
 
 @media only screen and (min-width: 1300px) {
-  
-  .photogrid {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 0.5%;
-    row-gap: 7px;
-    min-width: 1280px;
-  }
-  
 
-  
   .mainpiccontainer {
     max-width: 100%;
   
@@ -37,22 +29,6 @@
 
 @media only screen and (max-width: 1299px) {
   
-  .photogrid {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 1%;
-    row-gap: 7px;
-    min-width: 325px;
-  }
-  
-  .thumbnails {
-    width: 32%;
-  }
-  
-  .border {
-    border: solid 4px rgb(255, 196, 0);
-    width: 32%;
-  }
   
   .mainpiccontainer {
     max-width: 100%;
@@ -62,56 +38,10 @@
 }
 
 @media only screen and (max-width: 650px) {
-  
-  .photogrid {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 1%;
-    row-gap: 5px;
-    min-width: 325px;
-  }
-  
-  .thumbnails {
-    width: 49%;
-  }
-  
-  .border {
-    border: solid 4px rgb(255, 196, 0);
-    width: 49%;
-  }
-  
+
   .mainpiccontainer {
     max-width: 100%;
   
   }
 
 }
-
-/* 
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
